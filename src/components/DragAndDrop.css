@@ -1,0 +1,37 @@
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+}
+#gameboard{
+    display:flex;  
+}
+
+.square{
+    display:flex; 
+    width:200px;
+    height:200px;
+    justify-content: center;
+    
+}
+
+.one{
+    background-color:rgb(18, 235, 152);
+}
+
+.two{
+    background-color:rgb(255, 90, 233);
+}
+
+.three{
+    background-color: rgb(121, 221, 64);
+}
+
+img{
+    
+ width: auto;
+ height: 190px;
+ 
+}

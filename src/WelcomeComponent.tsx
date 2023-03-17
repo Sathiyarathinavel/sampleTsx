@@ -2,16 +2,11 @@ import ButtonComponent from "./ButtonComponent";
 import { useNavigate, useParams } from "react-router-dom";
 import { useEffect, useState } from "react";
 import axios from "axios";
+import EmployeeInterface from "./interface/EmployeeInterface";
 
 const WelcomeComponent = () => {
 
-    type EmpType = {
-        name: string;
-        age: number;
-        email: string;
-    }
-
-    const [jsonObj, setJsonObj] = useState<any>();
+    const [jsonObj, setJsonObj] = useState<EmployeeInterface>();
 
     const param = useParams();
 
