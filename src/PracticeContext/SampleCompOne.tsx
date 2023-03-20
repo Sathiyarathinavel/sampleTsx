@@ -9,7 +9,7 @@ let reducer=(state:any,action:any)=>{
         case "increment":
             return state+1;
         case "decrement":
-            return state-1;
+            return state-action.payload;
         case "reset":
             return 0;
         default:

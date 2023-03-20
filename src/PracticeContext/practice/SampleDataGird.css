@@ -1,0 +1,58 @@
+table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+  }
+  
+  thead th {
+    background-color: #eee;
+    font-weight: bold;
+  }
+  
+  tbody td, thead th {
+    padding: 10px;
+    text-align: left;
+  }
+  
+  @media (max-width: 600px) {
+    tbody td:before {
+      content: attr(data-label);
+      display: inline-block;
+      font-weight: bold;
+      margin-right: 5px;
+    }
+  }
+  
+  @media (max-width: 600px) {
+    thead {
+      display: none;
+    }
+    
+    tbody td {
+      display: block;
+      border: none;
+      position: relative;
+      padding-left: 50%;
+    }
+    
+    tbody td:before {
+      position: absolute;
+      top: 10px;
+      left: 0;
+      width: 45%;
+      text-align: left;
+      font-weight: bold;
+    }
+    
+    tbody td:nth-of-type(1):before {
+      content: "Column 1";
+    }
+    
+    /* tbody td:nth-of-type(2):before {
+      content: "Column 2";
+    }
+    
+    tbody td:nth-of-type(4):before {
+      content: "Column 4";
+    } */
+  }

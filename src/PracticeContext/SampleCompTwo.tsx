@@ -5,7 +5,7 @@ const SampleCompTwo = () => {
 const first:any = useContext(context)
   return (
     <div>
-        {first.count}
+        {first.count}&nbsp;
         <button onClick={(e:any)=>{first.dispatch({type:'increment'})}}>Increment</button>
         </div>
   )

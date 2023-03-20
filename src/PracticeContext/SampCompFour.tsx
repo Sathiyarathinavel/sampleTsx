@@ -4,7 +4,7 @@ import { context } from './SampleCompOne'
 const SampCompFour = () => {
     const three:any =useContext(context)
   return (
-    <div>{three.count}<button onClick={(e:any)=>{three.dispatch({type:'reset'})}}>Reset</button></div>
+    <div>{three.count}&nbsp;<button onClick={(e:any)=>{three.dispatch({type:'reset'})}}>Reset</button></div>
   )
 
 }
